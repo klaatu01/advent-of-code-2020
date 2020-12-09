@@ -35,8 +35,6 @@ fn part_02(input: &str) -> usize {
         .map(|entry| {
             entry
                 .split_whitespace()
-                .collect::<Vec<_>>()
-                .iter()
                 .map(|line| {
                     line.chars()
                         .filter(|c| !c.is_whitespace())
